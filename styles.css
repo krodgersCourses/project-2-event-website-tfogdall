@@ -83,13 +83,6 @@ a {
   border-style: solid;
 }
 
-/* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-
 article {
     width: 100%;
     text-align: center;
@@ -107,7 +100,7 @@ h1 {
 p {
   width:100%;
   font: Verdana;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0 auto;
   text-align: left;
   line-height: 30px;
@@ -115,13 +108,13 @@ p {
 }
 
 p strong {
-  font-size: 22px;
+  font-size: 27px;
   font-weight: 500;
   font-style: italic;
 }
 
 p weak {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 200;
   font-style: italic;
 }
@@ -179,4 +172,15 @@ p weak {
   font-size: 50px;
   font-weight: 900;
   font-style: italic; 
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  * {
+    font-size: 1.25em;
+  }
 }
