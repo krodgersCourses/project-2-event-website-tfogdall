@@ -1,5 +1,182 @@
 /* A handy list of color names: https://www.w3schools.com/colors/colors_names.asp */
 
 body {
-    background-color:aquamarine
+    background-color: white;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    min-height:100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    width: 75%;
+    text-align: center;
+}
+
+.header-image {
+    width: 25vw;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    text-align: center;
+    font: Verdana;
+}
+
+.flex-item-left {
+  background-color: #707a84;
+  padding: 5px;
+  flex: 33%;
+  color: white;
+  border-style: solid;
+}
+
+.flex-item-left-focused {
+  background-color: #005eb8;
+  padding: 5px;
+  flex: 33%;
+  color: black;
+  border-style: solid;
+}
+
+.flex-item-middle {
+  background-color: #707a84;
+  padding: 5px;
+  flex: 33%;
+  color: white;
+  border-style: solid;
+}
+
+.flex-item-middle-focused {
+  background-color: #005eb8;
+  padding: 5px;
+  flex: 33%;
+  color: black;
+  border-style: solid;
+}
+
+.flex-item-right {
+  background-color: #707a84;
+  padding: 5px;
+  flex: 33%;
+  color: white;
+  border-style: solid;
+}
+
+.flex-item-right-focused {
+  background-color: #005eb8;
+  padding: 5px;
+  flex: 33%;
+  color: black;
+  border-style: solid;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+article {
+    width: 100%;
+    text-align: center;
+    font: Verdana;
+    font-weight: 100;
+}
+
+h1 {
+  font: Geneva;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+p {
+  width:100%;
+  font: Verdana;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+p strong {
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+p weak {
+  font-size: 15px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #005eb8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .2s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text strong {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic; 
+}
+
+.text stronger {
+  font-size: 50px;
+  font-weight: 900;
+  font-style: italic; 
 }
