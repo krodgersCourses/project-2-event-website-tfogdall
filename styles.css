@@ -22,12 +22,18 @@ section {
     height: auto;
 }
 
+.pano-image {
+    width: 50vw;
+    height: auto;
+}
+
 * {
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+    font-size: 1em;
 }
 
 /*Flex-container and associated elements are based on W3School's 
@@ -104,6 +110,13 @@ h1 {
   margin-top: 1.25em;
 }
 
+h2 {
+  font: Geneva;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 1.25em;
+}
+
 p {
   width:100%;
   font: Verdana;
@@ -128,6 +141,10 @@ p weak {
 
 p italic {
   font-style: italic;
+}
+
+li {
+  text-align: left;
 }
 
 .container {
