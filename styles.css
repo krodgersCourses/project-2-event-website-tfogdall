@@ -133,14 +133,6 @@ p strong {
   font-style: italic;
 }
 
-p italic {
-  font-style: italic;
-}
-
-li {
-  text-align: left;
-}
-
 .container {
   position: relative;
   width: 50%;
