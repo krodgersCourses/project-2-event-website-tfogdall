@@ -18,7 +18,7 @@ section {
 }
 
 .header-image {
-    width: 25vw;
+    width: 35vw;
     height: auto;
 }
 
@@ -30,6 +30,8 @@ a {
     text-decoration: none;
 }
 
+/*Flex-container and associated elements are based on W3School's 
+flexbox tutorial: https://www.w3schools.com/css/css3_flexbox.asp */
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -91,7 +93,7 @@ article {
     text-align: center;
     font: Verdana;
     font-weight: 100;
-    /*font-size: 1em;*/
+    font-size: 1em;
 }
 
 h1 {
@@ -99,6 +101,7 @@ h1 {
   font-size: 1.5em;
   font-weight: 500;
   letter-spacing: 0.05em;
+  margin-top: 1.25em;
 }
 
 p {
@@ -120,6 +123,10 @@ p strong {
 p weak {
   font-size: 0.6em;
   font-weight: 200;
+  font-style: italic;
+}
+
+p italic {
   font-style: italic;
 }
 
@@ -148,6 +155,8 @@ p weak {
   transition: .2s ease;
 }
 
+/*Side-by-side containers with overlaying messages largely borrowed
+from W3School's tutorial on image hover overlay: https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp*/
 .container:hover .overlay {
   bottom: 0;
   height: 100%;
@@ -155,7 +164,7 @@ p weak {
 
 .text {
   color: white;
-  font-size: 1.25em;
+  font-size: 1em;
   /*letter-spacing: 1px;*/
   position: absolute;
   top: 50%;
@@ -173,7 +182,7 @@ p weak {
 }
 
 .text stronger {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 900;
   font-style: italic; 
 }
@@ -182,6 +191,15 @@ p weak {
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
+  }
+
+  .header-image {
+    width: 45vw;
+    height: auto;
+  }
+
+  .text {
+    font-size: 0.75em;
   }
 
   * {
