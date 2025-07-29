@@ -133,12 +133,6 @@ p strong {
   font-style: italic;
 }
 
-p weak {
-  font-size: 0.6em;
-  font-weight: 200;
-  font-style: italic;
-}
-
 p italic {
   font-style: italic;
 }
@@ -195,12 +189,6 @@ from W3School's tutorial on image hover overlay: https://www.w3schools.com/howto
 .text strong {
   font-size: 1.5em;
   font-weight: 500;
-  font-style: italic; 
-}
-
-.text stronger {
-  font-size: 2em;
-  font-weight: 900;
   font-style: italic; 
 }
 
